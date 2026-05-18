@@ -1,0 +1,173 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:j.0="http://localhost:3030/">
+  <owl:Class rdf:about="http://localhost:3030/felinosCasa">
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://localhost:3030/felinosCallejero"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://localhost:3030/felinosFelinoDomestico"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://localhost:3030/felinosCallejero">
+    <owl:disjointWith rdf:resource="http://localhost:3030/felinosCasa"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://localhost:3030/felinosFelinoDomestico"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://localhost:3030/felinosLeón">
+    <owl:disjointWith>
+      <j.0:felinosLeopardo rdf:about="http://localhost:3030/felinosLeopardo">
+        <j.0:felinosbandas>http://localhost:3030/felinosPuntos</j.0:felinosbandas>
+        <j.0:felinosmelena>http://localhost:3030/felinosfalse</j.0:felinosmelena>
+        <j.0:felinosagresivo>http://localhost:3030/felinostrue</j.0:felinosagresivo>
+        <j.0:felinosdomestico>http://localhost:3030/felinosfalse</j.0:felinosdomestico>
+        <owl:disjointWith>
+          <owl:Class rdf:about="http://localhost:3030/felinosTigre"/>
+        </owl:disjointWith>
+        <owl:disjointWith rdf:resource="http://localhost:3030/felinosLeón"/>
+        <rdfs:subClassOf>
+          <owl:Class rdf:about="http://localhost:3030/felinosFelinoSalvaje"/>
+        </rdfs:subClassOf>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+      </j.0:felinosLeopardo>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://localhost:3030/felinosTigre"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://localhost:3030/felinosFelinoSalvaje"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://localhost:3030/felinosFelinoSalvaje">
+    <owl:disjointWith>
+      <owl:Class rdf:about="http://localhost:3030/felinosFelinoDomestico"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://localhost:3030/felinosFelino"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://localhost:3030/felinosFelinoDomestico">
+    <owl:disjointWith rdf:resource="http://localhost:3030/felinosFelinoSalvaje"/>
+    <rdfs:subClassOf rdf:resource="http://localhost:3030/felinosFelino"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://localhost:3030/felinosTigre">
+    <owl:disjointWith rdf:resource="http://localhost:3030/felinosLeopardo"/>
+    <owl:disjointWith rdf:resource="http://localhost:3030/felinosLeón"/>
+    <rdfs:subClassOf rdf:resource="http://localhost:3030/felinosFelinoSalvaje"/>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="http://localhost:3030/felinosmelena">
+    <rdfs:domain rdf:resource="http://localhost:3030/felinosLeopardo"/>
+    <rdfs:domain rdf:resource="http://localhost:3030/felinosTigre"/>
+    <rdfs:domain rdf:resource="http://localhost:3030/felinosLeón"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://localhost:3030/felinostamaño">
+    <rdfs:domain>
+      <j.0:felinosSumatra rdf:about="http://localhost:3030/felinosSumatra">
+        <j.0:felinostamaño>http://localhost:3030/felinosPequeño</j.0:felinostamaño>
+        <j.0:felinoslocalización>http://localhost:3030/felinosIndonesia</j.0:felinoslocalización>
+        <j.0:felinosbandas>http://localhost:3030/felinosRayas</j.0:felinosbandas>
+        <j.0:felinosmelena>http://localhost:3030/felinosfalse</j.0:felinosmelena>
+        <j.0:felinosagresivo>http://localhost:3030/felinostrue</j.0:felinosagresivo>
+        <j.0:felinosdomestico>http://localhost:3030/felinosfalse</j.0:felinosdomestico>
+        <rdfs:subClassOf rdf:resource="http://localhost:3030/felinosTigre"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+      </j.0:felinosSumatra>
+    </rdfs:domain>
+    <rdfs:domain>
+      <j.0:felinosSiberiano rdf:about="http://localhost:3030/felinosSiberiano">
+        <j.0:felinostamaño>http://localhost:3030/felinosGrande</j.0:felinostamaño>
+        <j.0:felinoslocalización>http://localhost:3030/felinosChina</j.0:felinoslocalización>
+        <j.0:felinosbandas>http://localhost:3030/felinosRayas</j.0:felinosbandas>
+        <j.0:felinosmelena>http://localhost:3030/felinosfalse</j.0:felinosmelena>
+        <j.0:felinosagresivo>http://localhost:3030/felinostrue</j.0:felinosagresivo>
+        <j.0:felinosdomestico>http://localhost:3030/felinosfalse</j.0:felinosdomestico>
+        <rdfs:subClassOf rdf:resource="http://localhost:3030/felinosTigre"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+      </j.0:felinosSiberiano>
+    </rdfs:domain>
+    <rdfs:domain>
+      <j.0:felinosBengala rdf:about="http://localhost:3030/felinosBengala">
+        <j.0:felinostamaño>http://localhost:3030/felinosNormal</j.0:felinostamaño>
+        <j.0:felinoslocalización>http://localhost:3030/felinosIndia</j.0:felinoslocalización>
+        <j.0:felinosbandas>http://localhost:3030/felinosRayas</j.0:felinosbandas>
+        <j.0:felinosmelena>http://localhost:3030/felinosfalse</j.0:felinosmelena>
+        <j.0:felinosagresivo>http://localhost:3030/felinostrue</j.0:felinosagresivo>
+        <j.0:felinosdomestico>http://localhost:3030/felinosfalse</j.0:felinosdomestico>
+        <rdfs:subClassOf rdf:resource="http://localhost:3030/felinosTigre"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+      </j.0:felinosBengala>
+    </rdfs:domain>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://localhost:3030/felinoslocalización">
+    <rdfs:domain rdf:resource="http://localhost:3030/felinosSumatra"/>
+    <rdfs:domain rdf:resource="http://localhost:3030/felinosSiberiano"/>
+    <rdfs:domain rdf:resource="http://localhost:3030/felinosBengala"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://localhost:3030/felinoscariñoso">
+    <rdfs:domain rdf:resource="http://localhost:3030/felinosCallejero"/>
+    <rdfs:domain rdf:resource="http://localhost:3030/felinosCasa"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://localhost:3030/felinosagresivo">
+    <rdfs:domain rdf:resource="http://localhost:3030/felinosFelinoSalvaje"/>
+    <rdfs:domain rdf:resource="http://localhost:3030/felinosFelinoDomestico"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://localhost:3030/felinosraza">
+    <rdfs:domain>
+      <j.0:felinosSiames rdf:about="http://localhost:3030/felinosSiames">
+        <j.0:felinoscariñoso>http://localhost:3030/felinostrue</j.0:felinoscariñoso>
+        <j.0:felinosraza>http://localhost:3030/felinosSiames</j.0:felinosraza>
+        <j.0:felinosagresivo>http://localhost:3030/felinosfalse</j.0:felinosagresivo>
+        <j.0:felinosdomestico>http://localhost:3030/felinostrue</j.0:felinosdomestico>
+        <owl:disjointWith rdf:resource="http://localhost:3030/felinosSiames"/>
+        <owl:disjointWith>
+          <j.0:felinosSphynx rdf:about="http://localhost:3030/felinosSphynx">
+            <j.0:felinoscariñoso>http://localhost:3030/felinostrue</j.0:felinoscariñoso>
+            <j.0:felinosraza>http://localhost:3030/felinosSphynx</j.0:felinosraza>
+            <j.0:felinosagresivo>http://localhost:3030/felinosfalse</j.0:felinosagresivo>
+            <j.0:felinosdomestico>http://localhost:3030/felinostrue</j.0:felinosdomestico>
+            <owl:disjointWith rdf:resource="http://localhost:3030/felinosSiames"/>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+          </j.0:felinosSphynx>
+        </owl:disjointWith>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+      </j.0:felinosSiames>
+    </rdfs:domain>
+    <rdfs:domain rdf:resource="http://localhost:3030/felinosSphynx"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://localhost:3030/felinosdomestico">
+    <rdfs:domain rdf:resource="http://localhost:3030/felinosFelinoSalvaje"/>
+    <rdfs:domain rdf:resource="http://localhost:3030/felinosFelinoDomestico"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://localhost:3030/felinosbandas">
+    <rdfs:domain rdf:resource="http://localhost:3030/felinosLeopardo"/>
+    <rdfs:domain rdf:resource="http://localhost:3030/felinosTigre"/>
+    <rdfs:domain rdf:resource="http://localhost:3030/felinosLeón"/>
+  </owl:DatatypeProperty>
+  <j.0:felinosLeón rdf:about="http://localhost:3030/felinosLeon">
+    <j.0:felinosbandas>http://localhost:3030/felinosNo tiene</j.0:felinosbandas>
+    <j.0:felinosmelena>http://localhost:3030/felinostrue</j.0:felinosmelena>
+    <j.0:felinosagresivo>http://localhost:3030/felinostrue</j.0:felinosagresivo>
+    <j.0:felinosdomestico>http://localhost:3030/felinosfalse</j.0:felinosdomestico>
+  </j.0:felinosLeón>
+  <j.0:felinosSiames rdf:about="http://localhost:3030/felinosPersa">
+    <j.0:felinoscariñoso>http://localhost:3030/felinostrue</j.0:felinoscariñoso>
+    <j.0:felinosraza>http://localhost:3030/felinosPersa</j.0:felinosraza>
+    <j.0:felinosagresivo>http://localhost:3030/felinosfalse</j.0:felinosagresivo>
+    <j.0:felinosdomestico>http://localhost:3030/felinostrue</j.0:felinosdomestico>
+  </j.0:felinosSiames>
+  <j.0:felinosCallejero rdf:about="http://localhost:3030/felinosGato">
+    <j.0:felinoscariñoso>http://localhost:3030/felinosfalse</j.0:felinoscariñoso>
+    <j.0:felinosagresivo>http://localhost:3030/felinosfalse</j.0:felinosagresivo>
+    <j.0:felinosdomestico>http://localhost:3030/felinostrue</j.0:felinosdomestico>
+  </j.0:felinosCallejero>
+  <j.0:felinosSiames rdf:about="http://localhost:3030/felinosHimalayo">
+    <j.0:felinoscariñoso>http://localhost:3030/felinostrue</j.0:felinoscariñoso>
+    <j.0:felinosraza>http://localhost:3030/felinoshimalayo</j.0:felinosraza>
+    <j.0:felinosagresivo>http://localhost:3030/felinosfalse</j.0:felinosagresivo>
+    <j.0:felinosdomestico>http://localhost:3030/felinostrue</j.0:felinosdomestico>
+  </j.0:felinosSiames>
+</rdf:RDF>
